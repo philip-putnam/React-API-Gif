@@ -15,7 +15,7 @@ This application is written in JavaScript using the React library to do an API c
 
 In terminal type:
 
-1. git clone https://github.com/philip-putnam/react_beginning
+1. git clone https://github.com/philip-putnam/React-API-Gif
 2. cd react_beginning
 3. npm install
 4. npm run start
