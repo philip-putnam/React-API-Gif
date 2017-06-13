@@ -8,7 +8,7 @@ This application is written in JavaScript using the React library to do an API c
 
 ## Screenshots
 
-#### 06/13/2017 -
+#### 06/13/2017 - Splash Page
 ![alt text](https://github.com/philip-putnam/React-API-Gif/blob/master/splash_page_screenshot.png)
 
 ## Instructions:
@@ -34,10 +34,10 @@ The style sheet was downloaded from Treehouse, all credits go to them a good set
 
 ## Sources/References:
 
-Treehouse: https://www.teamtreehouse.com
-Giphy: https://giphy.com/
-Axios: https://github.com/mzabriskie/axios
-create-react-app: https://github.com/facebookincubator/create-react-app
+Treehouse: https://www.teamtreehouse.com <br>
+Giphy: https://giphy.com/ <br>
+Axios: https://github.com/mzabriskie/axios <br>
+create-react-app: https://github.com/facebookincubator/create-react-app <br>
 
 ### MIT License
 
