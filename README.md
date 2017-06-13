@@ -9,7 +9,7 @@ This application is written in JavaScript using the React library to do an API c
 ## Screenshots
 
 #### 06/13/2017 -
-![alt text]()
+![alt text](https://github.com/philip-putnam/React-API-Gif/blob/master/splash_page_screenshot.png)
 
 ## Instructions:
 
