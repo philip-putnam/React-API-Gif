@@ -29,15 +29,15 @@ export default class App extends Component {
     // });
 
     // Axios GET giphy API request here:
-    axios.get('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
-    .then( response => {
-      this.setState({
-        gifs: response.data.data
-      })
-    })
-    .catch( error => {
-      console.log('Error fethcing and parsing data', error);
-    });
+    // axios.get('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
+    // .then( response => {
+    //   this.setState({
+    //     gifs: response.data.data
+    //   })
+    // })
+    // .catch( error => {
+    //   console.log('Error fethcing and parsing data', error);
+    // });
 
     // Fetch API method used first, should still work!
     // fetch('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
@@ -50,6 +50,18 @@ export default class App extends Component {
     //   });
   }
 
+  performSearch = (query) => {
+    axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`)
+    .then( response => {
+      this.setState({
+        gifs: response.data.data
+      })
+    })
+    .catch( error => {
+      console.log('Error fethcing and parsing data', error);
+    });
+  }
+
   render() {
     console.log(this.state.gifs);
     return (
@@ -57,7 +69,7 @@ export default class App extends Component {
         <div className="main-header">
           <div className="inner">
             <h1 className="main-title">GifSearch</h1>
-            <SearchForm />
+            <SearchForm onSearch={this.performSearch} />
           </div>
         </div>
         <div className="main-content">
