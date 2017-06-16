@@ -4,8 +4,12 @@ import axios from 'axios';
 import SearchForm from './Components/SearchForm';
 import GifList from './Components/GifList';
 
-export default class App extends Component {
+import OAuth from 'oauth';
 
+const KEY = '6b256933e2094b038bc88e8722b32cc1';
+const SECRET = '27cd51aafde145e89c2d998892584736';
+
+export default class App extends Component {
 
   constructor() {
     super();
@@ -18,6 +22,28 @@ export default class App extends Component {
   componentDidMount() {
 
     this.performSearch();
+
+    // Playing around with OAuth here, not working :(
+    // var oauth = new OAuth.OAuth(
+    // 	'http://api.thenounproject.com',
+    // 	'http://api.thenounproject.com',
+    // 	KEY,
+    // 	SECRET,
+    // 	'1.0A',
+    // 	null,
+    // 	'HMAC-SHA1',
+    // 	undefined,
+    // 	{"Accept": "application/json"}
+    // )
+    // oauth.get(
+    // 	'http://api.thenounproject.com/icon/4',
+    // 	KEY,
+    // 	SECRET,
+    // 	function (e, data, res){
+    // 		if (e) console.error(e)
+    // 		console.log(require('util').inspect(data))
+    // 	}
+    // )
 
 
     // Another Axios API GET method call

@@ -19,7 +19,7 @@ In terminal type:
 2. cd react_beginning
 3. npm install
 4. npm run start
-5. navigate to 'localhost:8080' without quotes in supported web browser of your choice.
+5. navigate to 'localhost:3000' without quotes in supported web browser of your choice.
 
 ## Technologies:
 
